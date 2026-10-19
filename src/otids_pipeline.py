@@ -19,8 +19,8 @@ warnings.filterwarnings('ignore')
 # =============================================================================
 #  SET THESE PATHS
 # =============================================================================
-OTIDS_DIR = '/Users/tarun/Desktop/can3/10) CAN-Intrusion Dataset'
-OUT_DIR   = '/Users/tarun/Desktop/otids_output'
+OTIDS_DIR = 'data/otids'
+OUT_DIR   = 'outputs/otids'
 # =============================================================================
 
 os.makedirs(OUT_DIR, exist_ok=True)

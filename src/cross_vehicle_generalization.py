@@ -17,9 +17,9 @@ import xgboost as xgb
 warnings.filterwarnings('ignore')
 
 # =============================================================================
-ROAD_OUT  = '/Users/tarun/Desktop/road_output'
-OTIDS_OUT = '/Users/tarun/Desktop/otids_output'
-RES_DIR   = '/Users/tarun/Desktop/cross_vehicle_results'
+ROAD_OUT  = 'outputs/road'
+OTIDS_OUT = 'outputs/otids'
+RES_DIR   = 'outputs/cross_vehicle'
 # =============================================================================
 
 os.makedirs(RES_DIR, exist_ok=True)
@@ -68,7 +68,7 @@ def balance(df, feat_cols, ratio=3):
     if len(atk) == 0:
         raise RuntimeError(
             'No attack samples in ROAD features! '
-            'Delete /Users/tarun/Desktop/road_output/ and rerun nb1_road.py')
+            'Delete outputs/road/ and rerun src/road_pipeline.py')
     n_norm = min(len(norm), len(atk) * ratio)
     return pd.concat([norm.sample(n_norm, random_state=42), atk]
                      ).sample(frac=1, random_state=42).reset_index(drop=True)
@@ -84,7 +84,7 @@ for path, label in [
     (os.path.join(OTIDS_OUT, 'otids_features.parquet'), 'OTIDS features'),
 ]:
     if not os.path.exists(path):
-        raise FileNotFoundError(f'Missing: {path}\nRun nb1_road.py / nb2_otids.py first.')
+        raise FileNotFoundError(f'Missing: {path}\nRun src/road_pipeline.py / nb2_otids.py first.')
     sz = os.path.getsize(path)/1e6
     print(f'  OK  {label}  ({sz:.1f} MB)')
 

@@ -1,0 +1,4 @@
+Attack Type,N,Accuracy,Precision,Recall,F1,ROC-AUC
+DoS,150584,99.4,98.8,100.0,99.4,100.0
+Fuzzy,148516,71.6,72.3,67.7,69.9,80.4
+Impersonation,150268,73.5,66.6,94.2,78.0,86.6

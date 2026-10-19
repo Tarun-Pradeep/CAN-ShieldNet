@@ -15,8 +15,8 @@ from sklearn.metrics import (accuracy_score, precision_score, recall_score,
 import xgboost as xgb
 
 warnings.filterwarnings('ignore')
-ROAD_DIR = '/Users/tarun/Desktop/can3/road'
-OUT_DIR  = '/Users/tarun/Desktop/road_output'
+ROAD_DIR = 'data/road'
+OUT_DIR  = 'outputs/road'
 
 os.makedirs(OUT_DIR, exist_ok=True)
 

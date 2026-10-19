@@ -16,8 +16,8 @@ import xgboost as xgb
 
 warnings.filterwarnings('ignore')
 
-SYNCAN_DIR = '/Users/tarun/Desktop/can3'
-OUT_DIR    = '/Users/tarun/Desktop/syncan_output'
+SYNCAN_DIR = 'data/syncan'
+OUT_DIR    = 'outputs/syncan'
 os.makedirs(OUT_DIR, exist_ok=True)
 
 FEAT_COLS = [

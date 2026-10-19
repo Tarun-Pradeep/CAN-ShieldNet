@@ -1,0 +1,5 @@
+,Accuracy,Precision,Recall,F1,ROC-AUC
+Logistic Regression,62.52,64.9,54.52,59.26,66.49
+Random Forest,85.16,88.15,81.23,84.55,92.64
+XGBoost,91.3,91.1,91.55,91.32,97.31
+MLP Neural Network,76.16,77.79,73.23,75.44,84.6

@@ -1,0 +1,5 @@
+Model,Accuracy,Precision,Recall,F1,ROC-AUC
+LR [ROAD Direct],51.41,29.05,65.45,40.24,57.26
+RF [ROAD Direct],76.96,52.65,78.07,62.89,86.65
+XGBoost [ROAD Direct],73.77,48.53,81.29,60.78,85.35
+MLP [ROAD Direct],78.16,71.34,21.13,32.6,75.15

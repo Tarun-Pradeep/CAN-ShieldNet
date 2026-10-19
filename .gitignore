@@ -1,0 +1,12 @@
+# Datasets and generated artefacts are too large for git — download / regenerate them
+data/
+outputs/
+*.parquet
+*.pkl
+*.joblib
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+venv/
+.venv/

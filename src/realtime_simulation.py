@@ -13,8 +13,8 @@ from sklearn.metrics import (confusion_matrix, classification_report,
 warnings.filterwarnings('ignore')
 
 # =============================================================================
-OTIDS_OUT = '/Users/tarun/Desktop/otids_output'
-RES_DIR   = '/Users/tarun/Desktop/nb5_dashboard'
+OTIDS_OUT = 'outputs/otids'
+RES_DIR   = 'outputs/realtime'
 # =============================================================================
 
 os.makedirs(RES_DIR, exist_ok=True)
